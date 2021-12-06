@@ -20,7 +20,7 @@
     <div class="contact-us-container">
         <div class="contact-us-section contact-us-section1">
             <h1>Contact</h1>
-            <p>Any questions or concerns? Feel free to contact us, we're here to help!</p>
+            <p>Any questions or concerns? Enter the details below, we'll be more than happy to help!</p>
             <form action="" method="POST">
                 <input placeholder="First Name" name="fName" required><br>
                 <input placeholder="Last Name" name="lName"><br>
