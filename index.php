@@ -9,26 +9,41 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>OTU Cinema</title>
     <link rel="icon" type="image/jpg" href="homepage/logo.jpg">
-    <script src="_.js "></script>
+    
+    <link rel="stylesheet" href="../OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+
+    <!-- javascript -->
+    <script src="../OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="../OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js"></script>
+    
 </head>
+
+<style>
+    #BannerSpace {
+    height: 60px;
+    opacity: 0%;
+    }
+</style>
 
 <body>
     <?php
         include "connection.php";
         $sql = "SELECT * FROM movieTable";
     ?>
-    <!-- <header></header> -->
-    <?php include('./sections/header.php'); ?>
+    <header></header>
     <div id="home-section-1" class="movie-show-container">
+        <div id=BannerSpace></div>
         <h1>Currently Showing</h1>
         <h3>Book a Movie!</h3>
-
-        <div class="movies-container">
-
+        
+        <div class="row">
+        <div class="large-12 columns">
+          <div class="owl-carousel owl-theme">
             <?php
             if ($result = mysqli_query($con, $sql)) {
                 if (mysqli_num_rows($result) > 0) {
-                    for ($i = 0; $i <= 5; $i++) {
+                    for ($i = 0; $i <= 9; $i++) {
                         $row = mysqli_fetch_array($result);
                         echo '<div class="movie-box">';
                         echo '<img src="' . $row['movieImg'] . '" alt=" ">';
@@ -48,8 +63,28 @@
 
             mysqli_close($con);
             ?>
+          </div>
+          <script>
+            $(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                items: 4,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true
+              });
+              $('.play').on('click', function() {
+                owl.trigger('play.owl.autoplay', [1000])
+              })
+              $('.stop').on('click', function() {
+                owl.trigger('stop.owl.autoplay')
+              })
+            })
+          </script>
         </div>
-    </div>
+      </div>
 
     <div id="home-section-2" class="services-section">
         <h1>Simple, Quick & Easy!</h1>
@@ -80,7 +115,7 @@
     </div>
     <div id="home-section-3" class="trailers-section">
         <h1 class="section-title">Explore Popular Movies</h1>
-        <h3>Popular Movies</h3>
+        <h3>Currently Showing</h3>
         <div class="trailers-grid">
             <div class="trailers-grid-item">
                 <img src="img/movie-thumb-1.jpg" alt="">
@@ -126,11 +161,9 @@
             </div>
         </div>
     </div>
-    <!-- <footer></footer> -->
-    <?php include('./sections/footer.php'); ?>
-
-    <script src="scripts/jquery-3.3.1.min.js "></script>
-    <script src="scripts/script.js "></script>
+    <footer>
+      <script src="../OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/vendors/highlight.js"></script>
+      <script src="../OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/js/app.js"></script>
+    </footer>
 </body>
-
 </html>
