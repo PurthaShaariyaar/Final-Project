@@ -17,10 +17,11 @@
         include "connection.php";
         $sql = "SELECT * FROM movieTable";
     ?>
-    <header></header>
+    <!-- <header></header> -->
+    <?php include('./sections/header.php'); ?>
     <div id="home-section-1" class="movie-show-container">
         <h1>Currently Showing</h1>
-        <h3>Book a Movie!/h3>
+        <h3>Book a Movie!</h3>
 
         <div class="movies-container">
 
@@ -79,7 +80,7 @@
     </div>
     <div id="home-section-3" class="trailers-section">
         <h1 class="section-title">Explore Popular Movies</h1>
-        <h3>Currently Showing</h3>
+        <h3>Popular Movies</h3>
         <div class="trailers-grid">
             <div class="trailers-grid-item">
                 <img src="img/movie-thumb-1.jpg" alt="">
@@ -125,7 +126,8 @@
             </div>
         </div>
     </div>
-    <footer></footer>
+    <!-- <footer></footer> -->
+    <?php include('./sections/footer.php'); ?>
 
     <script src="scripts/jquery-3.3.1.min.js "></script>
     <script src="scripts/script.js "></script>
