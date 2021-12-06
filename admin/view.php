@@ -20,7 +20,7 @@ if (isset($_POST['but_logout'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Admin Dashboard</title>
     <link rel="icon" type="image/png" href="../img/logo.png">
-    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
@@ -47,7 +47,7 @@ if (isset($_POST['but_logout'])) {
 
         <?php include('sidebar.php'); ?>
 
-        <div class="container-lg">
+            <div class="admin-section-column">
             <div id=BannerSpace></div>
 
             <div class="col-lg-8">
@@ -128,8 +128,8 @@ if (isset($_POST['but_logout'])) {
                                 <td><?php echo $time; ?></td>
                                 <td><?php echo $ORDERID; ?></td>
                                 <td><?php echo $amount; ?></td>
-                                <td><button type="submit" type="button" class="btn btn-outline-danger"><?php echo  "<a href='deleteBooking.php?id=" . $row['bookingID'] . "' >delete</a>"; ?></button></td>
-                                <td><button name="update"  type="submit" onclick="" type="button" class="btn btn-outline-warning"><?php echo  "<a href='editBooking.php?id=" . $row['bookingID'] . "'>update</a>"; ?></button></td>
+                                <td><button type="submit" type="button" class="btn btn-outline-danger"><?php echo  "<a href='deleteBooking.php?id=" . $row['bookingID'] . "' >Delete</a>"; ?></button></td>
+                                <td><button name="update"  type="submit" onclick="" type="button" class="btn btn-outline-warning"><?php echo  "<a href='editBooking.php?id=" . $row['bookingID'] . "'>Update</a>"; ?></button></td>
                             </tr>
 
                             <?php } ?>
