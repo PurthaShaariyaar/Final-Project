@@ -101,7 +101,7 @@
                         </select>
 
                         <select name = "vaccinated" required>
-                            <option value="" disabled selected>Select</option>
+                            <option value="" disabled selected>Are you vaccinated?</option>
                             <option value = "yes">Yes</option>
                             <option value = "no">No</option>
                         </select>
