@@ -113,49 +113,91 @@
             <div class="service-item"></div>
         </div>
     </div>
-    <div id="home-section-3" class="trailers-section">
-        <h1 class="section-title">Explore Popular Movies</h1>
-        <h3>Currently Showing</h3>
+  <div id="home-section-3" class="trailers-section">
+        <h1 class="section-title">Explore new movies</h1>
+        <h3>Trailers</h3>
         <div class="trailers-grid">
             <div class="trailers-grid-item">
-                <img src="img/movie-thumb-1.jpg" alt="">
-                <div class="trailer-item-info" data-video="Z1BCujX3pw8">
-                    <h3>Captain Marvel</h3>
+                <img src="img/dune.thumb" alt="">
+                <div class="trailer-item-info" data-video="8g18jFHCLXk">
+                    <h3>Dune</h3>
                     <i class="far fa-3x fa-play-circle"></i>
                 </div>
             </div>
             <div class="trailers-grid-item">
-                <img src="img/movie-thumb-2.jpg" alt="">
-                <div class="trailer-item-info" data-video="OPEfsEaFv_c">
-                    <h3>Karmat Bytmrmt</h3>
+                <img src="img/encanto.thumb" alt="">
+                <div class="trailer-item-info" data-video="CaimKeDcudo">
+                    <h3>Encanto</h3>
                     <i class="far fa-3x fa-play-circle"></i>
                 </div>
             </div>
             <div class="trailers-grid-item">
-                <img src="img/movie-thumb-3.jpg" alt="">
-                <div class="trailer-item-info" data-video="cksYkEzUa7k">
-                    <h3>The Lego Movie</h3>
+                <img src="img/ghostbusters.thumb" alt="">
+                <div class="trailer-item-info" data-video="ahZFCF--uRY">
+                    <h3>Ghostbusters: Afterlife</h3>
                     <i class="far fa-3x fa-play-circle"></i>
                 </div>
             </div>
             <div class="trailers-grid-item">
-                <img src="img/movie-thumb-4.jpg" alt="">
-                <div class="trailer-item-info" data-video="Ze5YA4mkzhI">
-                    <h3>Secret Men Club</h3>
+                <img src="img/gucci.thumb" alt="">
+                <div class="trailer-item-info" data-video="pGi3Bgn7U5U">
+                    <h3>House of Gucci</h3>
                     <i class="far fa-3x fa-play-circle"></i>
                 </div>
             </div>
             <div class="trailers-grid-item">
-                <img src="img/movie-thumb-5.jpg" alt="">
-                <div class="trailer-item-info" data-video="lbUAVTc7NTo">
-                    <h3>VICE</h3>
+                <img src="img/resident.thumb" alt="">
+                <div class="trailer-item-info" data-video="4q6UGCyHZCI">
+                    <h3>Resident Evil: Welcome to Raccoon City</h3>
                     <i class="far fa-3x fa-play-circle"></i>
                 </div>
             </div>
             <div class="trailers-grid-item">
-                <img src="img/movie-thumb-6.jpg" alt="">
-                <div class="trailer-item-info" data-video="RyFlfN4dD14">
-                    <h3>The Vanishing</h3>
+                <img src="img/richard.thumb" alt="">
+                <div class="trailer-item-info" data-video="BKP_0z52ZAw">
+                    <h3>King Richard</h3>
+                    <i class="far fa-3x fa-play-circle"></i>
+                </div>
+            </div>
+            <div class="trailers-grid-item">
+                <img src="img/clifford.thumb" alt="">
+                <div class="trailer-item-info" data-video="4zH5iYM4wJo">
+                    <h3>Clifford the Big Red Dog</h3>
+                    <i class="far fa-3x fa-play-circle"></i>
+                </div>
+            </div>
+            <div class="trailers-grid-item">
+                <img src="img/eternals.thumb" alt="">
+                <div class="trailer-item-info" data-video="x_me3xsvDgk">
+                    <h3>Eternals</h3>
+                    <i class="far fa-3x fa-play-circle"></i>
+                </div>
+            </div>
+            <div class="trailers-grid-item">
+                <img src="img/notime.thumb" alt="">
+                <div class="trailer-item-info" data-video="N_gD9-Oa0fg">
+                    <h3>No Time To Die</h3>
+                    <i class="far fa-3x fa-play-circle"></i>
+                </div>
+            </div>
+            <div class="trailers-grid-item">
+                <img src="img/venom.thumb" alt="">
+                <div class="trailer-item-info" data-video="FmWuCgJmxo">
+                    <h3>Venom: Let There Be Carnage</h3>
+                    <i class="far fa-3x fa-play-circle"></i>
+                </div>
+            </div>
+            <div class="trailers-grid-item">
+                <img src="img/belfast.thumb" alt="">
+                <div class="trailer-item-info" data-video="Ja3PPOnJQ2k">
+                    <h3>Belfast</h3>
+                    <i class="far fa-3x fa-play-circle"></i>
+                </div>
+            </div>
+            <div class="trailers-grid-item">
+                <img src="img/french.thumb" alt="">
+                <div class="trailer-item-info" data-video="TcPk2p0Zaw4">
+                    <h3>The french Dispatch</h3>
                     <i class="far fa-3x fa-play-circle"></i>
                 </div>
             </div>
