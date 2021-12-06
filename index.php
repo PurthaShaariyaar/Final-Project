@@ -203,6 +203,7 @@
             </div>
         </div>
     </div>
+</div>
     <footer>
       <script src="../OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/vendors/highlight.js"></script>
       <script src="../OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/js/app.js"></script>
