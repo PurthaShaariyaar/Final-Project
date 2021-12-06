@@ -101,9 +101,9 @@
                         </select>
 
                         <select name = "vaccinated" required>
-                            <option value="" disabled selected>Are you vaccinated?</option>
-                            <option value = "yes">Yes</option>
-                            <option value = "no">No</option>
+                            <option value="" disabled selected>Vaccine Status</option>
+                            <option value = "yes">Vaccinated</option>
+                            <option value = "no">Not Vaccinated</option>
                         </select>
 
                         <input placeholder="First Name" type = "text" name = "fName" required>
