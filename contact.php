@@ -58,10 +58,17 @@
             <p><a href="connect@ontariotechu.ca">connect@ontariotechu.ca</a></p>
         </div>
     </div>
-    <div style="width: 75%; height: 350px; margin: 15%;">
-        <div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=BUE&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-        </div>
-    </div>
+   <div class="mapouter"><div class="gmap_canvas">
+    <iframe 
+    width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ontario%20tech%20university&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+    </iframe>
+        <br>
+        <style>
+        .mapouter{position:relative;
+            margin: 0 auto;
+    display: block;
+        height:500px;
+        width:600px;}</style></div></div>
     <footer></footer>
     <script src="scripts/jquery-3.3.1.min.js "></script>
     <script src="scripts/owl.carousel.min.js "></script>
