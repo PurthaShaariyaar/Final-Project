@@ -200,7 +200,7 @@ footer {
 }
 
 .movie-show-container > h1 {
-  color: #6e5a11;
+  color: #00BFFF;
   text-align: left;
   padding: 0 0 10px 0;
 }
@@ -378,7 +378,7 @@ footer {
 }
 
 .services-section > h1 {
-  color: #6e5a11;
+  color: #00BFFF;
   text-align: left;
   padding: 0 0 10px 0;
 }
@@ -407,7 +407,7 @@ footer {
 }
 
 .service-item > h2 {
-  color: #6e5a11;
+  color: #00BFFF;
   padding: 25px 0;
 }
 
@@ -416,9 +416,9 @@ footer {
   color: white;
   height: 120px;
   width: 120px;
-  background-color: rgb(126, 126, 126);
+  background-color: #FF8C00;
   border-radius: 50%;
-  border: #c7c7c7 12px solid;
+  border: #eeb383 12px solid;
   line-height: 90px;
   transition: all 0.5s ease;
 }
