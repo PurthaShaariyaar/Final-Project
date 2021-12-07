@@ -124,7 +124,6 @@
                     8px 8px 0px #b08909, 10px 10px 0px #ab995e;
             }
         </style>
-        <script src="_.js "></script>
     </head> 
     <body>
         <div>
