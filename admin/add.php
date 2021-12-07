@@ -22,7 +22,7 @@ if (isset($_POST['but_logout'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Add entry</title>
     <link rel="icon" type="image/png" href="../img/logo.png">
-    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
@@ -76,7 +76,7 @@ if (isset($_POST['but_logout'])) {
                     <div class="admin-section-panel admin-section-panel2">
 
                         <div class="admin-panel-section-header">
-                            <h2 style="color: #cf4545">ADD ENTRY</h2>
+                            <h2 style="color: #cf4545">Add Entry</h2>
                             <i class="fas fa-film" style="background-color: #cf4545"></i>
                         </div>
                         
