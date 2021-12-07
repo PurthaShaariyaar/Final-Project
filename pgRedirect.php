@@ -32,7 +32,6 @@
 <html>
     <head>
         <title>Customer Checkout</title>
-        <script src = "_.js"></script>
     </head>
     <body>
         <center>
