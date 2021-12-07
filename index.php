@@ -87,7 +87,7 @@
       </div>
 
     <div id="home-section-2" class="services-section">
-        <h1>Simple, Quick & Easy!</h1>
+        <h1 class="section-title">Simple, Quick & Easy!</h1>
         <h3>3 Steps to Book a Movie:</h3>
 
         <div class="services-container">
@@ -207,6 +207,7 @@
     <footer>
       <script src="../OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/vendors/highlight.js"></script>
       <script src="../OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/js/app.js"></script>
+      <script src="../scripts/script.js "></script>
     </footer>
 </body>
 </html>
