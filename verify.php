@@ -12,15 +12,21 @@
     $date = $_POST['date'];
     $time = $_POST['hour'];
     $movieid = $_POST['movie_id'];
+    $vaccinated = $_POST['vaccinated'];
     $order = "ARVR" . rand(10000, 99999999);
     $cust  = "CUST" . rand(1000, 999999);
 
+    // $_SESSION = ['ORDERID'] = $order;
 
     if ((!$_POST['submit'])) {
         echo "<script>alert('You are Not Suppose to come Here Directly');window.location.href='index.php';</script>";
     }
+    
+    if ($_POST['vaccinated'] == "no") {
+        echo "<script>alert('Unfortunately you are not vaccinated, please return when you are vaccinated.');window.location.href='index.php';</script>";
+    }
 
-    if (isset($_POST['submit'])) {
+    if ($_POST['vaccinated'] == "yes" && isset($_POST['submit'])) {
 
         $qry = "INSERT INTO bookingtable(`movieID`, `bookingTheatre`, `bookingType`, `bookingDate`, `bookingTime`, `bookingFName`, `bookingLName`, `bookingPNumber`, `bookingEmail`,`amount`, `ORDERID`)
         VALUES ('$movieid','$theatre','$type','$date','$time','$fname','$lname','$mobile','$email','Not Paid','$order')";
@@ -38,12 +44,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <title>Movie Verification</title>
-        <script src="_.js "></script>
     </head>
     <body>
         <center>
             <br><br>
-            <h1 style = "color: #1E90FF">Ticket Booking Information</h1>
+            <h1>Ticket Booking Information</h1>
             <br><br>
 
             <form method = "POST" action = "pgRedirect.php">
@@ -51,9 +56,9 @@
                     <tbody>
 
                         <tr>
-                            <th style = "color: #FF8C00">Line Item</th>
-                            <th style = "color: #FF8C00">Label</th>
-                            <th style = "color: #FF8C00">Value</th>
+                            <th>Line Item</th>
+                            <th>Label</th>
+                            <th>Value</th>
                         </tr>
 
                         <tr>
@@ -76,6 +81,8 @@
                         <tr>
                             <td>3</td>
                             <td><label>Purchase Site</label>
+                            </td>
+                            <td>
                                 <?php echo "www.OTUCinema.com"; ?>
                             </td>
                         </tr>
@@ -98,21 +105,22 @@
 
                         <tr>
                             <td>6</td>
-                            <td><label>Tax Amount</label></td>
+                            <td><label>Tax and Amount</label></td>
                             <td>
                                 <?php 
                                     if ($theatre == "main-hall") {
-                                        $ta = 200;
+                                        $ta = 13.95;
                                     }
                                     if ($theatre == "vip-hall") {
-                                        $ta = 500; 
+                                        $ta = 15.95; 
                                     }
                                     if ($theatre == "private-hall") {
-                                        $ta = 900;
+                                        $ta = 17.95;
                                     }
                                 ?>
 
-                                <input type = "text" name = "TXN_AMOUNT" value = "<?php echo $ta; ?>" >
+                                <p><?php echo '$'.$ta;?></p>
+                                <input type = "hidden" name = "TXN_AMOUNT" value = "<?php echo $ta ?>" >
                                 <input type = "hidden" name = "CUST_ID" value = "<?php echo $cust ?>" >
                                 <input type = "hidden" name = "INDUSTRY_TYPE_ID" value = "reatil" >
                                 <input type = "hidden" name = "CHANNEL_ID" value = "WEB" >                                
