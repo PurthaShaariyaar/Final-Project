@@ -15,11 +15,10 @@
 
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style/styles.css">
+        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <title>Booking for: <?php echo $row['movieTitle']; ?></title>
         <link rel="icon" type="image/png" href="img/logo.png"> 
-        <script src="_.js "></script> 
     </head>
 
     <body style="background-color:#00BFFF;">
@@ -42,23 +41,23 @@
                 <div class = "movie-information">
                     <table>
                         <tr>
-                            <td style = "color : white;">Genre</td>
+                            <td>Genre</td>
                             <td><?php echo $row['movieGenre']; ?></td>
                         </tr>
                         <tr>
-                            <td style = "color : white;">Duration</td>
+                            <td>Duration</td>
                             <td><?php echo $row['movieDuration']; ?></td>
                         </tr>
                         <tr>
-                            <td style = "color : white;">Release Date</td>
+                            <td>Release Date</td>
                             <td><?php echo $row['movieRelDate']; ?></td>
                         </tr>
                         <tr>
-                            <td style = "color : white;">Director</td>
+                            <td>Director</td>
                             <td><?php echo $row['movieDirector']; ?></td>
                         </tr>
                         <tr>
-                            <td style = "color : white;">Actors</td>
+                            <td>Actors</td>
                             <td><?php echo $row['movieActors']; ?></td>
                         </tr>
                     </table>
@@ -83,11 +82,11 @@
 
                         <select name = "date" required>
                             <option value="" disabled selected>Date</option>
-                            <option value="6-12">December 6,2021</option>
-                            <option value="7-12">December 7,2021</option>
-                            <option value="8-12">December 8,2021</option>
-                            <option value="9-12">December 9,2021</option>
-                            <option value="10-12">December 10,2021</option>
+                            <option value="6-12">December 6, 2021</option>
+                            <option value="7-12">December 7, 2021</option>
+                            <option value="8-12">December 8, 2021</option>
+                            <option value="9-12">December 9, 2021</option>
+                            <option value="10-12">December 10, 2021</option>
                         </select>
 
                         <select name = "hour" required>
@@ -117,7 +116,6 @@
                 </div>
             </div>
         </div>
-        <!-- <script src="scripts/jquery-3.3.1.min.js "></script> -->
         <script src="scripts/script.js "></script>
     </body>
 </html>
