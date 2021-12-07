@@ -21,12 +21,19 @@ if (isset($_POST['but_logout'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Admin Dashboard</title>
     <link rel="icon" type="image/png" href="../img/logo.png">
-    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
+<style>
+    #BannerSpace {
+    height: 60px;
+    opacity: 0%;
+    }
+</style>
 
 <body>
     <?php
@@ -37,21 +44,47 @@ if (isset($_POST['but_logout'])) {
     ?>
     
     <?php include('header.php'); ?>
-
+    
     <div class="admin-container">
 
         <?php include('sidebar.php'); ?>
+
         <div class="admin-section admin-section2">
-            <div class="admin-section-column">
 
+            <div class="container-lg">
+                <div id=BannerSpace></div>
+                <div class="col-lg-8">
+                    <div class="admin-section-stats">
 
-                <div class="admin-section-panel admin-section-panel2">
-                    <div class="admin-panel-section-header">
-                        <h2>Movies</h2>
-                        <i class="fas fa-film" style="background-color: #4547cf"></i>
+                        <div class="admin-section-stats-panel" style="border: none">
+                        </div>
+                        <div class="admin-section-stats-panel" style="border: none">
+                        </div>
+                        <div class="admin-section-stats-panel" style="border: none">
+                        </div>
+                        <div class="admin-section-stats-panel" style="border: none">
+                        </div>
+
+                        <div class="admin-section-stats-panel" style="border: none">
+                            <i class="fas fa-film" style="background-color: #4547cf"></i>
+                            <h2 style="color: #4547cf"><?php echo $moviesNo ?></h2>
+                            <h3>Movies</h3>
+                        </div>
+                        <div class="admin-section-stats-panel" style="border: none" width="100%">
+                        </div>
                     </div>
-                    <form action="" method="POST">
-<table>
+                </div>
+
+                <div id=BannerSpace></div>
+                <div class="admin-section-column">
+                    <div class="admin-section-panel admin-section-panel2">
+
+                        <div class="admin-panel-section-header">
+                            <h2 style="color: #4547cf">Add Movie</h2>
+                            <i class="fas fa-film" style="background-color: #4547cf"></i>
+                        </div>
+                        <form action="" method="POST">
+                            <table>
                         <tr>
                             <th>Movie Title: </th>
                         <th>
@@ -171,7 +204,7 @@ if (isset($_POST['but_logout'])) {
                                     <td><?php echo $releasedate; ?></td>
                                     <td><?php echo $movieactor; ?></td>
                                     <!--<td><?php echo  "<a href='deletemovie.php?id=" . $row['movieID'] . "'>delete</a>"; ?></td>-->
-                                    <td><button value="Book Now!" type="submit" onclick="" type="button" class="btn btn-danger"><?php echo  "<a href='deletemovie.php?id=" . $row['movieID'] . "'>delete</a>"; ?></button></td>
+                                    <td><button value="Book Now!" type="submit" onclick="" type="button" class="btn btn-outline-danger"><?php echo  "<a href='deletemovie.php?id=" . $row['movieID'] . "'>Delete</a>"; ?></button></td>
                                 </tr>
                             <?php }
                             ?>
